@@ -62,7 +62,7 @@
 body {
     margin: var(--header-height) 0 0 0;
     padding: 1rem 1rem 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: var(--normal-font-size);
 }
 
@@ -70,27 +70,6 @@ a {
     text-decoration: none;
 }
 
-.navbar {
-    height: 5em;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-center {
-    align-items: center;
-    display: flex;
-    gap: 2em;
-}
-
-.nav-center a {
-    color: var(--dark);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.nav-center_logo {
-    font-size: 1.5em;
-}
 
 .header {
     position: fixed;
@@ -219,7 +198,6 @@ a {
 
 .nav-name {
     font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
     white-space: nowrap;
 }
 
@@ -343,9 +321,14 @@ a {
     box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
 }
 
-.s1c1 h4 {
-    font-family: 'myfont';
-    font-size: 1.8em;
+.s1c1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.s1c1 p {
+    font-size: 5rem;
+    margin: 1rem;
 }
 
 #myFont {
