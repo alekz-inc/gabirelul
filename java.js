@@ -1,7 +1,7 @@
 /*==================== SHOW NAVBAR ====================*/
 const showMenu = (headerToggle, navbarId) => {
-    const toggleBtn = document.getElementById(headerToggle),
-        nav = document.getElementById(navbarId)
+    const toggleBtn = document.getElementById(headerToggle)
+    const nav = document.getElementById(navbarId)
 
     // Validate that variables exist
     if (headerToggle && navbarId) {

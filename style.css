@@ -99,7 +99,12 @@ a {
 .header-logo {
     color: var(--dark);
     font-family: 'myfont';
+}
 
+.header-img-name {
+    color: var(--dark);
+    font-family: 'myfont';
+    display: none;
 }
 
 .hamburgher {
@@ -213,7 +218,6 @@ a {
     .hamburgher {
         display: block;
     }
-
     .hamburgher.active .hamburgher-bar:nth-child(2) {
         opacity: 0;
     }
@@ -226,10 +230,15 @@ a {
         transform: translateY(-5.5px) rotate(-45deg);
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .header-img-name {
+        display: flex;
+    }
     .header-logo {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -247,10 +256,6 @@ a {
 
     .header-toggle {
         display: none;
-    }
-
-    .header-logo {
-        display: block;
     }
 
     .header-img {
@@ -368,7 +373,7 @@ a {
 
 #s2-heading {
     font-family: 'myfont';
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .s2-work {
