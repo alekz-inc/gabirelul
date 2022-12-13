@@ -435,6 +435,7 @@ a {
 .link-content {
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
     gap: 3em;
 }
