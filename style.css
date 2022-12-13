@@ -36,9 +36,10 @@
     --container-color: #FFFFFF;
 
     --body-font: 'Poppins', sans-serif;
-    --normal-font-size: .9rem;
-    --small-font-size: .9rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
     --smaller-font-size: .75rem;
+
 
     --font-medium: 500;
     --font-semi-bold: 600;
@@ -50,7 +51,7 @@
     :root {
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
-        --smaller-font-size: .8rem;
+        --smaller-font-size: .813rem;
     }
 }
 
@@ -420,48 +421,29 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
-    height: auto;
+    gap: 3em;
+    margin: 2em 0;
 }
-
-.links-1-a,
-.links-1-b,
-.links-1-c,
-.links-1-d {
+.link-1 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
-    height: 4em;
-    background-color: var(--dark);
-    margin: 1em;
-    padding: 0 1em;
-    min-width: 15em;
+    justify-content: space-around;
+    width: 20em;
+    box-shadow: 0 0 1px 1px var(--light-grey);
+    padding: 1em;
 }
 
-.links-1-a a,
-.links-1-b a,
-.links-1-c a,
-.links-1-d a {
-    color: var(--white);
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-.links-1-a i,
-.links-1-b i,
-.links-1-c i,
-.links-1-d i {
-    color: var(--white);
+.link-1 i {
     font-size: 1.5em;
+    color: var(--dark);
+}
+
+.link-1 a {
+    color: var(--dark);
 }
 
 @media screen and (max-width: 768px) {
-
-    .links-1-a,
-    .links-1-b,
-    .links-1-c,
-    .links-1-d {
-        min-width: 12em;
+    .link-1 {
+        width: 15em;
     }
 }
