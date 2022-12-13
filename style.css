@@ -218,6 +218,7 @@ a {
     .hamburgher {
         display: block;
     }
+
     .hamburgher.active .hamburgher-bar:nth-child(2) {
         opacity: 0;
     }
@@ -236,6 +237,7 @@ a {
     .header-img-name {
         display: flex;
     }
+
     .header-logo {
         display: none;
     }
@@ -410,5 +412,56 @@ a {
 
     .s1c1 p {
         text-align: center;
+    }
+}
+
+.links-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    height: auto;
+}
+
+.links-1-a,
+.links-1-b,
+.links-1-c,
+.links-1-d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: 4em;
+    background-color: var(--dark);
+    margin: 1em;
+    padding: 0 1em;
+    min-width: 15em;
+}
+
+.links-1-a a,
+.links-1-b a,
+.links-1-c a,
+.links-1-d a {
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.links-1-a i,
+.links-1-b i,
+.links-1-c i,
+.links-1-d i {
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .links-1-a,
+    .links-1-b,
+    .links-1-c,
+    .links-1-d {
+        min-width: 12em;
     }
 }
