@@ -316,8 +316,8 @@ a {
 }
 
 .section-1 {
-    height: 80vh;
-    margin: var(--header-height) 0 0 0;
+    height: auto;
+    margin: 2em 0;
 }
 
 .s1c1 {
@@ -336,27 +336,81 @@ a {
     margin-bottom: 2em;
 }
 
-.s1c1 p {
-    font-size: 5rem;
-    margin: 0 0 4rem 0;
-}
-
 #myFont {
     font-family: 'myfont';
+    text-align: center;
     font-size: 3em;
+}
+
+.s1c1-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3em;
+    justify-content: center;
 }
 
 .s1c2 img {
     height: 40vh;
+    margin: 0;
+    padding: 0;
+}
+
+#myText {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#myText-2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.introButton {
+    background: 0;
+    font-family: 'myfont';
+    margin: 1.5em 0;
+}
+
+.introButton:hover {
+    background: var(--yellow);
+    transition: .2s ease-in-out;
+}
+
+.introButton i {
+    color: var(--dark);
+    font-size: 1.2em;
+}
+
+.introButton a {
+    color: var(--dark);
+
 }
 
 @media screen and (max-width: 768px) {
     #myFont {
         font-size: 1.5em;
     }
+
+    .s1c1-me {
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
     .s1c1 img {
         height: 150px;
         width: 150px;
+    }
+
+    #myText {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #myText-2 {
+        font-size: 1.3em;
+        text-align: center;
     }
 }
 
@@ -524,12 +578,14 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: var(--yellow);
-    transition: .4s;
+    transition: .2s ease-in-out;
     cursor: pointer;
 }
 
 @media screen and (max-width: 319px) {
-    #lname, #mesaj {
+
+    #lname,
+    #mesaj {
         width: 15em;
     }
 }
