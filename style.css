@@ -371,6 +371,9 @@ a {
 
 .introButton {
     background: 0;
+    padding: .4em .7em;
+    border: 1px solid var(--dark);
+    /* box-shadow: 0 0 1px 1px var(--light-grey); */
     font-family: 'myfont';
     margin: 1.5em 0;
     cursor: pointer;
