@@ -103,6 +103,10 @@ a {
     font-family: 'myfont';
 }
 
+.header-logo:hover {
+    color: var(--primary);
+}
+
 .header-img-name {
     color: var(--dark);
     font-family: 'myfont';
@@ -271,7 +275,7 @@ a {
     }
 
     .nav-link:hover {
-        color: var(--yellow);
+        color: var(--primary);
         transition: .1s ease-out;
     }
 
@@ -380,7 +384,7 @@ a {
 }
 
 .introButton:hover {
-    background: var(--yellow);
+    background: var(--primary);
     transition: .2s ease-in-out;
 }
 
@@ -499,40 +503,53 @@ a {
     margin: 2em 0;
 }
 
-
-.link-1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
-}
-
 .link-content {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    box-shadow: 0 0 1px 1px var(--light-grey);
+    /* box-shadow: 0 0 1px 1px var(--light-grey); */
     padding: 1em;
     gap: 3em;
     width: 20em;
 }
 
-.link-1 i {
-    font-size: 1.5em;
-    color: var(--dark);
-}
-
-.link-content:hover {
-    color: var(--yellow);
-}
-
 .link-name {
-    color: var(--dark);
+    color: var(--white);
+    font-size: 1em;
+}
+
+.link-2 {
+    background-color: var(--primary);
+    height: 3em;
+    width: 20em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.link-2 i {
+    font-size: 1.3em;
+}
+
+.link-2:hover {
+    background-color: var(--sec);
+}
+
+.linkLeft {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.link-2 i {
+    font-size: 1.3em;
 }
 
 @media screen and (max-width: 768px) {
-    .link-1 {
+    .link-2 {
         width: 15em;
     }
 
@@ -558,7 +575,8 @@ a {
 #lname {
     width: 20em;
     border: 0;
-    box-shadow: 0 0 1px 1px var(--light-grey);
+    /* box-shadow: 0 0 1px 1px var(--light-grey); */
+    border: 1px solid var(--dark);
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
@@ -567,27 +585,31 @@ a {
 #mesaj {
     width: 20em;
     border: 0;
-    box-shadow: 0 0 1px 1px var(--light-grey);
+    /* box-shadow: 0 0 1px 1px var(--light-grey); */
+    border: 1px solid var(--dark);
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
 }
 
 input[type=submit] {
-    background: 0;
+    background-color: var(--primary);
     border: 0;
-    box-shadow: 0 0 1px 1px var(--light-grey);
+    /* box-shadow: 0 0 1px 1px var(--light-grey); */
+
     width: 5em;
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
+    color: var(--white);
+    cursor: pointer;
 }
 
-input[type=submit]:hover {
+/* input[type=submit]:hover {
     background-color: var(--yellow);
     transition: .2s ease-in-out;
     cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 319px) {
 
