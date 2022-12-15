@@ -580,6 +580,7 @@ a {
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
+    border-radius: 0;
 }
 
 #mesaj {
@@ -590,19 +591,20 @@ a {
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
+    border-radius: 0;
 }
 
 input[type=submit] {
     background-color: var(--primary);
     border: 0;
     /* box-shadow: 0 0 1px 1px var(--light-grey); */
-
     width: 5em;
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
     color: var(--white);
     cursor: pointer;
+    border-radius: 0;
 }
 
 /* input[type=submit]:hover {
