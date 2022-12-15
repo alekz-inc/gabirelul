@@ -11,18 +11,15 @@
 :root {
     --white: #fff;
     --black: #121212;
+    --dark: #1e1e1e;
 
-    /* --dark: #1e1e1e;
-    --red: #731010;
-    --lightred: ##ef403f;
-    --gray: #707070; */
+    --primary: #032539;
+    --secondary: #1c768f;
+    --third: #fa991c;
 
-    --dark: #202020;
-    --yellow: #FFCE73;
-    --pink: #FFA2C0;
-    --sec: #0049C6;
-    --primary: #6C5DD3;
     --light-grey: rgba(22, 8, 43, 0.1);
+    --body-color: #F4F9F9;
+    --text-color: #373d3f;
 
     /*========== BEGINNING ==========*/
     --header-height: 3.5rem;
@@ -30,11 +27,8 @@
 
     --first-color: #6923D0;
     --first-color-light: #F4F0FA;
-    --title-color: #19181B;
-    --text-color: #58555E;
+
     --text-color-light: #A5A1AA;
-    --body-color: #f8f8f8;
-    --container-color: #FFFFFF;
 
     --body-font: 'Montserrat', sans-serif;
     --normal-font-size: .938rem;
@@ -67,6 +61,7 @@ body {
     padding: 1rem 1rem 0;
     font-family: 'Montserrat', sans-serif;
     font-size: var(--normal-font-size);
+    background: var(--body-color);
 }
 
 a {
@@ -78,7 +73,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--white);
+    background-color: var(--body-color);
     width: 100%;
     padding: 0 1em;
     z-index: var(--z-fixed);
@@ -99,12 +94,12 @@ a {
 }
 
 .header-logo {
-    color: var(--dark);
+    color: var(--text-color);
     font-family: 'myfont';
 }
 
 .header-logo:hover {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .header-img-name {
@@ -131,7 +126,7 @@ a {
 .nav {
     position: fixed;
     top: 0;
-    background-color: var(--white);
+    background-color: var(--body-color);
     left: -100%;
     height: 100%;
     padding: 1rem 1rem 0 1rem;
@@ -142,6 +137,7 @@ a {
 
 .nav-container {
     height: 100%;
+    background-color: var(--body-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -275,7 +271,7 @@ a {
     }
 
     .nav-link:hover {
-        color: var(--primary);
+        color: var(--secondary);
         transition: .1s ease-out;
     }
 
@@ -340,12 +336,6 @@ a {
     margin-bottom: 2em;
 }
 
-#myFont {
-    font-family: 'myfont';
-    text-align: center;
-    font-size: 3em;
-}
-
 .s1c1-me {
     display: flex;
     flex-wrap: wrap;
@@ -360,10 +350,18 @@ a {
     padding: 0;
 }
 
+#myFont {
+    font-family: 'myfont';
+    text-align: center;
+    font-size: 3em;
+    color: var(--text-color);
+}
+
 #myText {
     font-size: 1.5em;
     text-align: center;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 
@@ -371,6 +369,7 @@ a {
     font-size: 1.5em;
     text-align: center;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 .introButton {
@@ -381,15 +380,16 @@ a {
     font-family: 'myfont';
     margin: 1.5em 0;
     cursor: pointer;
+    color: var(--text-color);
 }
 
 .introButton:hover {
-    background: var(--primary);
+    background: var(--secondary);
     transition: .2s ease-in-out;
 }
 
 .introButton i {
-    color: var(--dark);
+    color: var(--text-color);
     font-size: 1.2em;
 }
 
@@ -447,7 +447,11 @@ a {
 
 #s2-heading {
     font-family: 'myfont';
-    font-size: 1.5em;
+    color: var(--text-color);
+    display: flex;
+    font-size: 1.6em;
+    align-items: center;
+    justify-content: center;
 }
 
 .s2-work {
@@ -459,12 +463,14 @@ a {
 
 .s2-work img {
     height: 15em;
-    box-shadow: 0 0 1px 1px var(--light-grey);
+    border: 1px solid var(--dark);
+    /* box-shadow: 0 0 1px 1px var(--light-grey); */
 }
 
 @media screen and (max-width: 571px) {
     #s2-heading {
         display: flex;
+        font-size: 1.4em;
         justify-content: center;
         align-items: center;
     }
@@ -535,7 +541,7 @@ a {
 }
 
 .link-2:hover {
-    background-color: var(--sec);
+    background-color: var(--secondary);
 }
 
 .linkLeft {
@@ -560,20 +566,43 @@ a {
 
 .contact {
     height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 4em;
+}
+
+.contactLeft {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+#myTextContact {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#headingContact {
+    font-family: 'myfont';
+    color: var(--text-color);
+    display: flex;
+    font-size: 1.6em;
+    align-items: center;
     justify-content: center;
 }
 
-.contact-area {
+.contactRight {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em;
     gap: 1em;
 }
 
 #lname {
     width: 20em;
+    background: 0;
     border: 0;
     /* box-shadow: 0 0 1px 1px var(--light-grey); */
     border: 1px solid var(--dark);
@@ -585,6 +614,7 @@ a {
 
 #mesaj {
     width: 20em;
+    background: 0;
     border: 0;
     /* box-shadow: 0 0 1px 1px var(--light-grey); */
     border: 1px solid var(--dark);
@@ -598,7 +628,7 @@ input[type=submit] {
     background-color: var(--primary);
     border: 0;
     /* box-shadow: 0 0 1px 1px var(--light-grey); */
-    width: 5em;
+    width: 20em;
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
@@ -612,6 +642,26 @@ input[type=submit] {
     transition: .2s ease-in-out;
     cursor: pointer;
 } */
+@media screen and (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactLeft {
+        align-items: center;
+        text-align: center;
+        border: 0;
+    }
+
+    #myTextContact {
+        font-size: 1em;
+        text-align: center;
+    }
+    #headingContact {
+        font-size: 1.4em;
+    }
+}
 
 @media screen and (max-width: 319px) {
 
