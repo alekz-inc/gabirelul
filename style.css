@@ -454,18 +454,41 @@ a {
     justify-content: center;
 }
 
-.s2-work {
+#logoDesignTitle {
+    font-family: 'myfont';
+    color: var(--text-color);
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    font-size: 1.6em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
 }
 
-.s2-work img {
+.logoDesign {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.logoName {
+    border: 1px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.logoImage img {
     height: 15em;
     border: 1px solid var(--dark);
     /* box-shadow: 0 0 1px 1px var(--light-grey); */
 }
+
 
 @media screen and (max-width: 571px) {
     #s2-heading {
@@ -475,12 +498,8 @@ a {
         align-items: center;
     }
 
-    .s2-work {
+    .logoDesign {
         justify-content: center;
-    }
-
-    .s2-work h4 {
-        text-align: center;
     }
 
     .s1c1 {
@@ -658,6 +677,7 @@ input[type=submit] {
         font-size: 1em;
         text-align: center;
     }
+
     #headingContact {
         font-size: 1.4em;
     }
